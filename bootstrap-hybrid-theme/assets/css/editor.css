@@ -1,0 +1,26 @@
+/*
+ * Editor-Styles: Bootstrap-Umgebung im Block-Editor annähern.
+ * Bootstrap 5 nutzt rem-basierte Größen – der Editor erbt die
+ * Body-Schriftgröße über .editor-styles-wrapper.
+ */
+
+.editor-styles-wrapper {
+	background: #ffffff;
+	color: #212529;
+}
+
+/* Beitragsbilder und weite Blöcke nicht über den Rand laufen lassen */
+.editor-styles-wrapper .wp-block-image img,
+.editor-styles-wrapper .wp-block-video video {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Breite/Volle-Breite-Blöcke visuell kennzeichnen */
+.editor-styles-wrapper .alignwide {
+	max-width: 1140px;
+}
+
+.editor-styles-wrapper .alignfull {
+	max-width: none;
+}
